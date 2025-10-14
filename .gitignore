@@ -1,0 +1,68 @@
+# Build results
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.log
+*.vspscc
+*.vssscc
+*.user
+*.suo
+*.sdf
+*.dbmdl
+*.dbproj.schemaview
+*.pidb
+*.svclog
+*.psess
+*.vsp
+*.vsix
+*.docstates
+
+# Visual Studio folders
+.vs/
+.idea/
+.vscode/
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Backup and temporary files
+*.bak
+*.tmp
+*.temp
+*.~*
+
+# Build artifacts
+*.msi
+*.appx
+*.appxbundle
+
+# Test results
+TestResults/
+*.trx
+
+# WPF designer files
+Generated_Code/
+
+# Publish output
+publish/
+*.pubxml
+*.publishproj
+
+# Configuration files
+*.config
+*.launch.json
+
+# Others
+*.DS_Store
+Thumbs.db
+desktop.ini
