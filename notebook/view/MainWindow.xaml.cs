@@ -13,25 +13,28 @@ namespace notebook.view
             notebook = new Notebook();
         }
 
-        // Bouton : Saisir les Matières
         private void SaisirMatieres_Click(object sender, RoutedEventArgs e)
         {
-            var unitsWindow = new EditUnitsWindow(notebook);
+            var unitsWindow = new EditUnitsAndModulesWindow(notebook);
             unitsWindow.ShowDialog();
         }
-
-        // Bouton : Rentrer un Examen
-        private void RentrerExamen_Click(object sender, RoutedEventArgs e)
+        private void GoCreateExam(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Fonction à implémenter : sélectionnez un module pour ajouter un examen.");
-            // Tu peux ici ouvrir une fenêtre de sélection de module, puis EditExamsWindow
+            var dialog = new AddExamDialog(notebook);
+            if (dialog.ShowDialog() == true)
+            {
+                MessageBox.Show("Examen ajouté avec succès.");
+            }
         }
 
-        // Bouton : Afficher les Moyens
+
+
+
+
         private void AfficherMoyens_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Fonction à implémenter : calcul et affichage des moyennes.");
-            // Tu peux ici parcourir notebook.ListUnits() et calculer les moyennes
         }
+
     }
 }

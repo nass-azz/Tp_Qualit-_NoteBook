@@ -24,5 +24,8 @@ namespace Logic
             if (!units.Remove(u))
                 throw new InvalidOperationException("This unit does not exist.");
         }
+
+        public Module[] ListModules() =>
+            units.SelectMany(u => u.ListModules()).ToArray();
     }
 }

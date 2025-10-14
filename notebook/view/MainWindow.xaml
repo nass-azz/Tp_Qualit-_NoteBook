@@ -22,7 +22,7 @@
         Foreground="White" FontWeight="Bold" BorderThickness="0" Click="SaisirMatieres_Click"/>
 
                 <Button Content="Rentrer Un Examen" Width="220" Height="50" Background="#2196F3"
-        Foreground="White" FontWeight="Bold" BorderThickness="0" Click="RentrerExamen_Click"/>
+        Foreground="White" FontWeight="Bold" BorderThickness="0" Click="GoCreateExam"/>
 
                 <Button Content="Afficher Les Moyens" Width="220" Height="50" Background="#FF9800"
         Foreground="White" FontWeight="Bold" BorderThickness="0" Click="AfficherMoyens_Click"/>
