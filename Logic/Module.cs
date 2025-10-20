@@ -5,7 +5,7 @@ namespace Logic
 {
     public class Module : EducationalElement
     {
-        private readonly List<Exam> exams = new();
+        public  List<Exam> exams = new();
         public Unit ParentUnit { get; set; }
 
         public Module() { }

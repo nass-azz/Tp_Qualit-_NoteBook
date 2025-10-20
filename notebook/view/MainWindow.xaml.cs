@@ -13,25 +13,36 @@ namespace notebook.view
             notebook = new Notebook();
         }
 
-        // Bouton : Saisir les Matières
+       
         private void SaisirMatieres_Click(object sender, RoutedEventArgs e)
         {
             var unitsWindow = new EditUnitsWindow(notebook);
             unitsWindow.ShowDialog();
         }
 
-        // Bouton : Rentrer un Examen
+      
         private void RentrerExamen_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Fonction à implémenter : sélectionnez un module pour ajouter un examen.");
-            // Tu peux ici ouvrir une fenêtre de sélection de module, puis EditExamsWindow
         }
 
-        // Bouton : Afficher les Moyens
+      
         private void AfficherMoyens_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Fonction à implémenter : calcul et affichage des moyennes.");
-            // Tu peux ici parcourir notebook.ListUnits() et calculer les moyennes
         }
+
+        private void GoListeExams(object sender, RoutedEventArgs e)
+        {
+            var examsWindow = new ExamsListWindow (notebook);
+            examsWindow.ShowDialog();
+
+        }
+        private void GoListExams(object sender, RoutedEventArgs e)
+        {
+            var w = new ExamsListWindow (notebook);
+            w.Show();
+        }
+
     }
 }

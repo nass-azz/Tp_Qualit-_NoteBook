@@ -53,5 +53,25 @@ namespace TestLogic
             var u = new Unit { Name = "UE Info", Coef = 2f };
             Assert.Throws<InvalidOperationException>(() => nb.RemoveUnit(u));
         }
+        [Fact]
+        public void TestListExamsWithData()
+        {
+            var nb = new Notebook();
+            var u = new Unit("UE1", 2);
+            var m = new Module("Algo", 3);
+            var e = new Exam("Dupont", DateTime.Now, 1, 15);
+
+            
+
+            m.AddExam(e);
+            u.AddModule(m);
+            nb.AddUnit(u);
+
+            var exams = nb.ListExams();
+
+            Assert.Single(exams);
+            Assert.Equal(e, exams[0]);
+        }
+
     }
 }

@@ -26,6 +26,8 @@
 
                 <Button Content="Afficher Les Moyens" Width="220" Height="50" Background="#FF9800"
         Foreground="White" FontWeight="Bold" BorderThickness="0" Click="AfficherMoyens_Click"/>
+                <Button Content="List Exams" Click="GoListExams" Width="120" Height="30" Margin="10"/>
+
             </StackPanel>
 
             <Border Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="15" Background="White" Padding="10" >

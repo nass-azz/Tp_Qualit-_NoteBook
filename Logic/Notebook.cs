@@ -7,6 +7,8 @@ namespace Logic
     public class Notebook
     {
         private readonly List<Unit> units = new();
+        
+       
 
         public Unit[] ListUnits() => units.ToArray();
 
@@ -23,6 +25,21 @@ namespace Logic
             if (u == null) throw new ArgumentNullException(nameof(u));
             if (!units.Remove(u))
                 throw new InvalidOperationException("This unit does not exist.");
+        }
+        public Exam[] ListExams()
+        {
+            var exams = new List<Exam>();
+
+            foreach (var unit in units)
+            {
+                foreach (var module in unit.ListModules()) 
+                {
+                    if (module.exams != null)              
+                        exams.AddRange(module.exams);
+                }
+            }
+
+            return exams.ToArray();
         }
     }
 }
