@@ -13,12 +13,16 @@ namespace notebook.view
             notebook = new Notebook();
         }
 
+<<<<<<< HEAD
        
+=======
+>>>>>>> 4982de92ad3b3eeb4958cd562c12da320cdf63b7
         private void SaisirMatieres_Click(object sender, RoutedEventArgs e)
         {
-            var unitsWindow = new EditUnitsWindow(notebook);
+            var unitsWindow = new EditUnitsAndModulesWindow(notebook);
             unitsWindow.ShowDialog();
         }
+<<<<<<< HEAD
 
       
         private void RentrerExamen_Click(object sender, RoutedEventArgs e)
@@ -27,11 +31,27 @@ namespace notebook.view
         }
 
       
+=======
+        private void GoCreateExam(object sender, RoutedEventArgs e)
+        {
+            var dialog = new AddExamDialog(notebook);
+            if (dialog.ShowDialog() == true)
+            {
+                MessageBox.Show("Examen ajouté avec succès.");
+            }
+        }
+
+
+
+
+
+>>>>>>> 4982de92ad3b3eeb4958cd562c12da320cdf63b7
         private void AfficherMoyens_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Fonction à implémenter : calcul et affichage des moyennes.");
         }
 
+<<<<<<< HEAD
         private void GoListeExams(object sender, RoutedEventArgs e)
         {
             var examsWindow = new ExamsListWindow (notebook);
@@ -44,5 +64,7 @@ namespace notebook.view
             w.Show();
         }
 
+=======
+>>>>>>> 4982de92ad3b3eeb4958cd562c12da320cdf63b7
     }
 }

@@ -54,13 +54,6 @@ namespace notebook
             }
         }
 
-        private void OpenExams(object sender, RoutedEventArgs e)
-        {
-            if (ModulesList.SelectedItem is Module selected)
-            {
-                var examWindow = new EditExamsWindow(selected);
-                examWindow.ShowDialog();
-            }
-        }
+        
     }
 }

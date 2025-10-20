@@ -7,6 +7,7 @@ namespace Logic
         private string teacher;
         private float coef;
         private float note;
+        private bool isAbsent;
 
         public string Teacher
         {
@@ -19,7 +20,7 @@ namespace Logic
             }
         }
 
-        public DateTime Date { get; set; }
+        public DateTime Date { get; set; } = DateTime.Now;
 
         public float Coef
         {
@@ -43,14 +44,13 @@ namespace Logic
             }
         }
 
-        private bool isAbsent;
         public bool IsAbsent
         {
             get => isAbsent;
             set
             {
                 isAbsent = value;
-                if (isAbsent) note = 0; // Absence => note = 0
+                if (isAbsent) note = 0;
             }
         }
 

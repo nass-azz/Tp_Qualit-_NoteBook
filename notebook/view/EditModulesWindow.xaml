@@ -18,7 +18,6 @@
             <Button Content="Ajouter" Width="80" Margin="5" Click="AddModule"/>
             <Button Content="Modifier" Width="80" Margin="5" Click="EditModule"/>
             <Button Content="Supprimer" Width="80" Margin="5" Click="DeleteModule"/>
-            <Button Content="Examens" Width="80" Margin="5" Click="OpenExams"/>
         </StackPanel>
     </Grid>
 </Window>
